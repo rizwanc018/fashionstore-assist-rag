@@ -1,0 +1,182 @@
+[
+  {
+    "faq_id": "FAQ001",
+    "question": "What is the return policy?",
+    "answer": "Eligible items can be returned within 7 calendar days after delivery if they are unused, unwashed, undamaged, and have their original tags and packaging. Some categories may be marked non-returnable on the product page.",
+    "category": "Returns"
+  },
+  {
+    "faq_id": "FAQ002",
+    "question": "How do I request a return?",
+    "answer": "Sign in to your account, open Orders, select the item, and choose Request Return. Select a reason and submit the request. If you checked out as a guest, contact support with your order reference.",
+    "category": "Returns"
+  },
+  {
+    "faq_id": "FAQ003",
+    "question": "When will I receive my refund?",
+    "answer": "After the returned item passes the quality check, the refund is initiated within 5–7 business days. The time taken by your bank or payment provider to show the credit may vary.",
+    "category": "Refunds"
+  },
+  {
+    "faq_id": "FAQ004",
+    "question": "Are sale items returnable?",
+    "answer": "Sale items follow the same return rules unless the product page explicitly marks an item as non-returnable. Check the item page before placing your order.",
+    "category": "Returns"
+  },
+  {
+    "faq_id": "FAQ005",
+    "question": "Can I exchange an item for another size?",
+    "answer": "Size exchanges are subject to availability. Submit an exchange request from Orders within 7 calendar days after delivery. If the requested size is unavailable, you may be offered a return instead, subject to eligibility.",
+    "category": "Exchanges"
+  },
+  {
+    "faq_id": "FAQ006",
+    "question": "How can I check my order status?",
+    "answer": "Sign in and open Orders to view the latest order status. Once the parcel is dispatched, the tracking link will appear when available.",
+    "category": "Orders"
+  },
+  {
+    "faq_id": "FAQ007",
+    "question": "How long does delivery take?",
+    "answer": "Standard delivery usually takes 3–7 business days after dispatch. Delivery estimates can vary by destination, courier capacity, and public holidays.",
+    "category": "Shipping"
+  },
+  {
+    "faq_id": "FAQ008",
+    "question": "Do you offer free shipping?",
+    "answer": "Standard shipping is free on orders of ₹1,499 or more. Orders below ₹1,499 have a flat shipping fee of ₹79. Any applicable shipping charge is shown at checkout.",
+    "category": "Shipping"
+  },
+  {
+    "faq_id": "FAQ009",
+    "question": "Do you deliver to my PIN code?",
+    "answer": "Serviceability depends on the courier network. Enter your PIN code on the product page or at checkout to check whether delivery is available for your address.",
+    "category": "Shipping"
+  },
+  {
+    "faq_id": "FAQ010",
+    "question": "Can I change my delivery address after ordering?",
+    "answer": "Address changes may be possible before the order is packed. Contact support as soon as possible with your order reference. Changes cannot be guaranteed after dispatch.",
+    "category": "Orders"
+  },
+  {
+    "faq_id": "FAQ011",
+    "question": "Can I cancel an order?",
+    "answer": "You can request cancellation from Orders while the order is still in processing. Once it has been packed or dispatched, cancellation may no longer be possible.",
+    "category": "Cancellations"
+  },
+  {
+    "faq_id": "FAQ012",
+    "question": "Which payment methods are accepted?",
+    "answer": "The store demo supports UPI, debit cards, credit cards, and net banking at checkout. Available methods may be displayed differently depending on the payment provider.",
+    "category": "Payments"
+  },
+  {
+    "faq_id": "FAQ013",
+    "question": "Is cash on delivery available?",
+    "answer": "Cash on delivery is available only for eligible PIN codes and orders. If available, the option will appear during checkout.",
+    "category": "Payments"
+  },
+  {
+    "faq_id": "FAQ014",
+    "question": "What should I do if my payment was deducted but the order was not created?",
+    "answer": "Wait a few minutes and check Orders before trying again. If the order is still missing, contact support with the payment reference and transaction time. Do not share your PIN or OTP.",
+    "category": "Payments"
+  },
+  {
+    "faq_id": "FAQ015",
+    "question": "How do I choose the right size?",
+    "answer": "Use the size guide on the product page and compare its measurements with a similar garment you own. If you are between sizes, review the fit description and garment measurements before ordering.",
+    "category": "Sizing"
+  },
+  {
+    "faq_id": "FAQ016",
+    "question": "Are product colors exactly as shown in photos?",
+    "answer": "Product colors may look slightly different because of screen settings, lighting, and photography. Refer to the written color description as well as the images.",
+    "category": "Products"
+  },
+  {
+    "faq_id": "FAQ017",
+    "question": "How should I wash my clothes?",
+    "answer": "Follow the care instructions on the garment label and product page. As a general precaution, separate similar colors and avoid harsh bleach unless the care label permits it.",
+    "category": "Care"
+  },
+  {
+    "faq_id": "FAQ018",
+    "question": "Are the products made from genuine cotton?",
+    "answer": "Check the fabric field and description on each product page for its listed material. Products described as cotton blends contain cotton combined with other fibers.",
+    "category": "Products"
+  },
+  {
+    "faq_id": "FAQ019",
+    "question": "Do you provide a warranty on clothing?",
+    "answer": "The demo catalog does not define a general warranty for clothing. If a product has a specific warranty, its product page will state the applicable terms. Contact support if the listing is unclear.",
+    "category": "Warranty"
+  },
+  {
+    "faq_id": "FAQ020",
+    "question": "How can I contact customer support?",
+    "answer": "For this demo store, contact support at support@example-fashion-store.test. Include your order reference when asking about an existing order. This is a placeholder address, not a monitored mailbox.",
+    "category": "Support"
+  },
+  {
+    "faq_id": "FAQ021",
+    "question": "Can I place an order without creating an account?",
+    "answer": "Guest checkout may be available where enabled. If you use guest checkout, keep your order confirmation details so support can help locate the order.",
+    "category": "Orders"
+  },
+  {
+    "faq_id": "FAQ022",
+    "question": "Do you have discounts for first-time customers?",
+    "answer": "Promotions change over time. Check the home page, product page, or checkout for currently configured offers. The FAQ dataset does not guarantee an active first-order discount.",
+    "category": "Promotions"
+  },
+  {
+    "faq_id": "FAQ023",
+    "question": "Can I use more than one coupon on an order?",
+    "answer": "Unless the offer terms say otherwise, only one coupon code can be applied per order. The checkout page will show whether a code can be combined with another offer.",
+    "category": "Promotions"
+  },
+  {
+    "faq_id": "FAQ024",
+    "question": "What if I receive a damaged or incorrect item?",
+    "answer": "Contact support within 48 hours of delivery with your order reference and clear photos of the item and packaging. The support team can review the issue and explain the available resolution.",
+    "category": "Issues"
+  },
+  {
+    "faq_id": "FAQ025",
+    "question": "Are all listed sizes currently in stock?",
+    "answer": "The sizes in the catalog represent size options for the product, not live inventory. Check the product page at purchase time for current size availability.",
+    "category": "Inventory"
+  },
+  {
+    "faq_id": "FAQ026",
+    "question": "Can I get recommendations for summer clothing?",
+    "answer": "You can search by season, fabric, category, and intended use. For example, try 'lightweight cotton shirts for summer' or 'casual summer dresses'. Recommendations depend on the product information available in the catalog.",
+    "category": "Products"
+  },
+  {
+    "faq_id": "FAQ027",
+    "question": "Do you sell gift cards?",
+    "answer": "Gift card availability is not specified in this demo store's current catalog. Contact support for clarification rather than assuming a gift card can be purchased.",
+    "category": "Products"
+  },
+  {
+    "faq_id": "FAQ028",
+    "question": "Can I return footwear if it does not fit?",
+    "answer": "Footwear may be returned within the standard 7-day return window if it is unused, tried only indoors, and returned with its original box, tags, and packaging. Check the product page for any item-specific restrictions.",
+    "category": "Returns"
+  },
+  {
+    "faq_id": "FAQ029",
+    "question": "How are prices displayed?",
+    "answer": "All product prices in this demo dataset are listed in Indian rupees (INR). The displayed product price is the catalog price; any applicable shipping fee is shown separately at checkout.",
+    "category": "Pricing"
+  },
+  {
+    "faq_id": "FAQ030",
+    "question": "Do you ship internationally?",
+    "answer": "International shipping is not supported in this demo store policy. The delivery service is intended for addresses within India only.",
+    "category": "Shipping"
+  }
+]

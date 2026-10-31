@@ -1,0 +1,1048 @@
+[
+  {
+    "product_id": "P1001",
+    "name": "Men's Classic Cotton Crew-Neck T-Shirt",
+    "description": "Men's Classic Cotton Crew-Neck T-Shirt. Designed for casual wear. Made from cotton in black. Suitable for summer use. Features include crew neck, regular fit, breathable.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Black",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 599,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "crew neck",
+      "regular fit",
+      "breathable"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1002",
+    "name": "Men's Solid Cotton Crew-Neck T-Shirt",
+    "description": "Men's Solid Cotton Crew-Neck T-Shirt. Designed for casual wear. Made from cotton in white. Suitable for summer use. Features include crew neck, regular fit, lightweight.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "White",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 549,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "crew neck",
+      "regular fit",
+      "lightweight"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1003",
+    "name": "Men's Oversized Graphic T-Shirt",
+    "description": "Men's Oversized Graphic T-Shirt. Designed for streetwear wear. Made from cotton in blue. Suitable for all season use. Features include oversized fit, graphic print, drop shoulder.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Blue",
+    "gender": "Men",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 799,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "All Season",
+    "usage": "Streetwear",
+    "features": [
+      "oversized fit",
+      "graphic print",
+      "drop shoulder"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1004",
+    "name": "Men's Slim Fit Polo T-Shirt",
+    "description": "Men's Slim Fit Polo T-Shirt. Designed for casual wear. Made from cotton pique in navy. Suitable for summer use. Features include polo collar, slim fit, button placket.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Navy",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 899,
+    "currency": "INR",
+    "fabric": "Cotton Pique",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "polo collar",
+      "slim fit",
+      "button placket"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1005",
+    "name": "Women's Relaxed Fit Cotton T-Shirt",
+    "description": "Women's Relaxed Fit Cotton T-Shirt. Designed for casual wear. Made from cotton in pink. Suitable for summer use. Features include relaxed fit, round neck, soft finish.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Pink",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 649,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "relaxed fit",
+      "round neck",
+      "soft finish"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1006",
+    "name": "Women's Basic V-Neck T-Shirt",
+    "description": "Women's Basic V-Neck T-Shirt. Designed for casual wear. Made from cotton in black. Suitable for summer use. Features include v-neck, regular fit, minimal design.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Black",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 499,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "v-neck",
+      "regular fit",
+      "minimal design"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1007",
+    "name": "Women's Printed Oversized T-Shirt",
+    "description": "Women's Printed Oversized T-Shirt. Designed for streetwear wear. Made from cotton in green. Suitable for all season use. Features include oversized fit, front print, dropped shoulders.",
+    "category": "Topwear",
+    "sub_category": "T-Shirt",
+    "color": "Green",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 749,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "All Season",
+    "usage": "Streetwear",
+    "features": [
+      "oversized fit",
+      "front print",
+      "dropped shoulders"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1008",
+    "name": "Men's Solid Casual Cotton Shirt",
+    "description": "Men's Solid Casual Cotton Shirt. Designed for casual wear. Made from cotton in blue. Suitable for summer use. Features include button-down, regular fit, single chest pocket.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Blue",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 999,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "button-down",
+      "regular fit",
+      "single chest pocket"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1009",
+    "name": "Men's Formal Slim Fit Shirt",
+    "description": "Men's Formal Slim Fit Shirt. Designed for formal wear. Made from cotton blend in white. Suitable for all season use. Features include spread collar, slim fit, full sleeves.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "White",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1299,
+    "currency": "INR",
+    "fabric": "Cotton Blend",
+    "season": "All Season",
+    "usage": "Formal",
+    "features": [
+      "spread collar",
+      "slim fit",
+      "full sleeves"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1010",
+    "name": "Men's Checked Casual Shirt",
+    "description": "Men's Checked Casual Shirt. Designed for casual wear. Made from cotton in red. Suitable for winter use. Features include check pattern, button-down, full sleeves.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Red",
+    "gender": "Men",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 1199,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Winter",
+    "usage": "Casual",
+    "features": [
+      "check pattern",
+      "button-down",
+      "full sleeves"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1011",
+    "name": "Men's Linen Blend Summer Shirt",
+    "description": "Men's Linen Blend Summer Shirt. Designed for casual wear. Made from linen blend in beige. Suitable for summer use. Features include linen blend, relaxed fit, breathable weave.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Beige",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1499,
+    "currency": "INR",
+    "fabric": "Linen Blend",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "linen blend",
+      "relaxed fit",
+      "breathable weave"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1012",
+    "name": "Women's Tailored Formal Shirt",
+    "description": "Women's Tailored Formal Shirt. Designed for formal wear. Made from cotton blend in light blue. Suitable for all season use. Features include tailored fit, point collar, full sleeves.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Light Blue",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1399,
+    "currency": "INR",
+    "fabric": "Cotton Blend",
+    "season": "All Season",
+    "usage": "Formal",
+    "features": [
+      "tailored fit",
+      "point collar",
+      "full sleeves"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1013",
+    "name": "Women's Floral Print Casual Shirt",
+    "description": "Women's Floral Print Casual Shirt. Designed for casual wear. Made from rayon in yellow. Suitable for summer use. Features include floral print, relaxed fit, button front.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Yellow",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1199,
+    "currency": "INR",
+    "fabric": "Rayon",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "floral print",
+      "relaxed fit",
+      "button front"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1014",
+    "name": "Women's Oversized Striped Shirt",
+    "description": "Women's Oversized Striped Shirt. Designed for casual wear. Made from cotton in blue. Suitable for all season use. Features include oversized fit, vertical stripes, drop shoulder.",
+    "category": "Topwear",
+    "sub_category": "Shirt",
+    "color": "Blue",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 1599,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "oversized fit",
+      "vertical stripes",
+      "drop shoulder"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1015",
+    "name": "Men's Tapered Fit Chinos",
+    "description": "Men's Tapered Fit Chinos. Designed for casual wear. Made from cotton twill in khaki. Suitable for all season use. Features include tapered fit, mid rise, four pockets.",
+    "category": "Bottomwear",
+    "sub_category": "Trousers",
+    "color": "Khaki",
+    "gender": "Men",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "price": 1499,
+    "currency": "INR",
+    "fabric": "Cotton Twill",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "tapered fit",
+      "mid rise",
+      "four pockets"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1016",
+    "name": "Men's Formal Slim Fit Trousers",
+    "description": "Men's Formal Slim Fit Trousers. Designed for formal wear. Made from polyester viscose blend in black. Suitable for all season use. Features include slim fit, flat front, formal waistband.",
+    "category": "Bottomwear",
+    "sub_category": "Trousers",
+    "color": "Black",
+    "gender": "Men",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "price": 1799,
+    "currency": "INR",
+    "fabric": "Polyester Viscose Blend",
+    "season": "All Season",
+    "usage": "Formal",
+    "features": [
+      "slim fit",
+      "flat front",
+      "formal waistband"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1017",
+    "name": "Men's Relaxed Fit Cargo Pants",
+    "description": "Men's Relaxed Fit Cargo Pants. Designed for streetwear wear. Made from cotton in olive. Suitable for all season use. Features include relaxed fit, multiple cargo pockets, drawstring waist.",
+    "category": "Bottomwear",
+    "sub_category": "Trousers",
+    "color": "Olive",
+    "gender": "Men",
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "price": 1899,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "All Season",
+    "usage": "Streetwear",
+    "features": [
+      "relaxed fit",
+      "multiple cargo pockets",
+      "drawstring waist"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1018",
+    "name": "Women's High-Rise Straight Jeans",
+    "description": "Women's High-Rise Straight Jeans. Designed for casual wear. Made from denim cotton in blue. Suitable for all season use. Features include high rise, straight leg, five-pocket design.",
+    "category": "Bottomwear",
+    "sub_category": "Jeans",
+    "color": "Blue",
+    "gender": "Women",
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "price": 1999,
+    "currency": "INR",
+    "fabric": "Denim Cotton",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "high rise",
+      "straight leg",
+      "five-pocket design"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1019",
+    "name": "Women's Wide-Leg Trousers",
+    "description": "Women's Wide-Leg Trousers. Designed for formal wear. Made from polyester blend in black. Suitable for all season use. Features include wide leg, high waist, front pleats.",
+    "category": "Bottomwear",
+    "sub_category": "Trousers",
+    "color": "Black",
+    "gender": "Women",
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "price": 1699,
+    "currency": "INR",
+    "fabric": "Polyester Blend",
+    "season": "All Season",
+    "usage": "Formal",
+    "features": [
+      "wide leg",
+      "high waist",
+      "front pleats"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1020",
+    "name": "Women's Cotton Palazzo Pants",
+    "description": "Women's Cotton Palazzo Pants. Designed for casual wear. Made from cotton in maroon. Suitable for summer use. Features include wide leg, elasticated waist, side pockets.",
+    "category": "Bottomwear",
+    "sub_category": "Trousers",
+    "color": "Maroon",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1299,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "wide leg",
+      "elasticated waist",
+      "side pockets"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1021",
+    "name": "Men's Lightweight Hooded Sweatshirt",
+    "description": "Men's Lightweight Hooded Sweatshirt. Designed for casual wear. Made from cotton fleece in grey. Suitable for winter use. Features include hooded, kangaroo pocket, ribbed cuffs.",
+    "category": "Topwear",
+    "sub_category": "Sweatshirt",
+    "color": "Grey",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1799,
+    "currency": "INR",
+    "fabric": "Cotton Fleece",
+    "season": "Winter",
+    "usage": "Casual",
+    "features": [
+      "hooded",
+      "kangaroo pocket",
+      "ribbed cuffs"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1022",
+    "name": "Women's Zip-Up Fleece Hoodie",
+    "description": "Women's Zip-Up Fleece Hoodie. Designed for casual wear. Made from polyester fleece in lavender. Suitable for winter use. Features include full zip, front pockets, drawstring hood.",
+    "category": "Topwear",
+    "sub_category": "Hoodie",
+    "color": "Lavender",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1999,
+    "currency": "INR",
+    "fabric": "Polyester Fleece",
+    "season": "Winter",
+    "usage": "Casual",
+    "features": [
+      "full zip",
+      "front pockets",
+      "drawstring hood"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1023",
+    "name": "Men's Classic Denim Jacket",
+    "description": "Men's Classic Denim Jacket. Designed for casual wear. Made from denim cotton in blue. Suitable for winter use. Features include button front, chest pockets, regular fit.",
+    "category": "Outerwear",
+    "sub_category": "Jacket",
+    "color": "Blue",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 2499,
+    "currency": "INR",
+    "fabric": "Denim Cotton",
+    "season": "Winter",
+    "usage": "Casual",
+    "features": [
+      "button front",
+      "chest pockets",
+      "regular fit"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1024",
+    "name": "Women's Lightweight Bomber Jacket",
+    "description": "Women's Lightweight Bomber Jacket. Designed for streetwear wear. Made from polyester in black. Suitable for winter use. Features include zip front, ribbed hem, side pockets.",
+    "category": "Outerwear",
+    "sub_category": "Jacket",
+    "color": "Black",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 2799,
+    "currency": "INR",
+    "fabric": "Polyester",
+    "season": "Winter",
+    "usage": "Streetwear",
+    "features": [
+      "zip front",
+      "ribbed hem",
+      "side pockets"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1025",
+    "name": "Men's Running Shorts",
+    "description": "Men's Running Shorts. Designed for sportswear wear. Made from polyester in black. Suitable for summer use. Features include elastic waist, quick-dry fabric, side pockets.",
+    "category": "Bottomwear",
+    "sub_category": "Shorts",
+    "color": "Black",
+    "gender": "Men",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 799,
+    "currency": "INR",
+    "fabric": "Polyester",
+    "season": "Summer",
+    "usage": "Sportswear",
+    "features": [
+      "elastic waist",
+      "quick-dry fabric",
+      "side pockets"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1026",
+    "name": "Women's High-Waist Yoga Leggings",
+    "description": "Women's High-Waist Yoga Leggings. Designed for sportswear wear. Made from nylon spandex in navy. Suitable for all season use. Features include high waist, stretch fabric, full length.",
+    "category": "Bottomwear",
+    "sub_category": "Leggings",
+    "color": "Navy",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1199,
+    "currency": "INR",
+    "fabric": "Nylon Spandex",
+    "season": "All Season",
+    "usage": "Sportswear",
+    "features": [
+      "high waist",
+      "stretch fabric",
+      "full length"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1027",
+    "name": "Unisex Lightweight Track Pants",
+    "description": "Unisex Lightweight Track Pants. Designed for sportswear wear. Made from polyester in charcoal. Suitable for all season use. Features include elastic waist, tapered leg, zip pockets.",
+    "category": "Bottomwear",
+    "sub_category": "Track Pants",
+    "color": "Charcoal",
+    "gender": "Unisex",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1099,
+    "currency": "INR",
+    "fabric": "Polyester",
+    "season": "All Season",
+    "usage": "Sportswear",
+    "features": [
+      "elastic waist",
+      "tapered leg",
+      "zip pockets"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1028",
+    "name": "Women's Cotton A-Line Kurta",
+    "description": "Women's Cotton A-Line Kurta. Designed for festive casual wear. Made from cotton in green. Suitable for summer use. Features include a-line silhouette, three-quarter sleeves, side slits.",
+    "category": "Ethnic Wear",
+    "sub_category": "Kurta",
+    "color": "Green",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 1499,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Festive Casual",
+    "features": [
+      "a-line silhouette",
+      "three-quarter sleeves",
+      "side slits"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1029",
+    "name": "Women's Printed Straight Kurta",
+    "description": "Women's Printed Straight Kurta. Designed for casual wear. Made from rayon in pink. Suitable for all season use. Features include straight cut, printed pattern, round neck.",
+    "category": "Ethnic Wear",
+    "sub_category": "Kurta",
+    "color": "Pink",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1299,
+    "currency": "INR",
+    "fabric": "Rayon",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "straight cut",
+      "printed pattern",
+      "round neck"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1030",
+    "name": "Men's Textured Nehru Jacket",
+    "description": "Men's Textured Nehru Jacket. Designed for festive wear. Made from cotton blend in beige. Suitable for winter use. Features include mandarin collar, button front, textured finish.",
+    "category": "Ethnic Wear",
+    "sub_category": "Ethnic Jacket",
+    "color": "Beige",
+    "gender": "Men",
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "price": 2299,
+    "currency": "INR",
+    "fabric": "Cotton Blend",
+    "season": "Winter",
+    "usage": "Festive",
+    "features": [
+      "mandarin collar",
+      "button front",
+      "textured finish"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1031",
+    "name": "Women's Floral Midi Dress",
+    "description": "Women's Floral Midi Dress. Designed for casual wear. Made from rayon in yellow. Suitable for summer use. Features include midi length, floral print, short sleeves.",
+    "category": "Dresses",
+    "sub_category": "Midi Dress",
+    "color": "Yellow",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1899,
+    "currency": "INR",
+    "fabric": "Rayon",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "midi length",
+      "floral print",
+      "short sleeves"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1032",
+    "name": "Women's Solid Wrap Dress",
+    "description": "Women's Solid Wrap Dress. Designed for party wear. Made from polyester crepe in red. Suitable for all season use. Features include wrap style, tie waist, v-neck.",
+    "category": "Dresses",
+    "sub_category": "Midi Dress",
+    "color": "Red",
+    "gender": "Women",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 2199,
+    "currency": "INR",
+    "fabric": "Polyester Crepe",
+    "season": "All Season",
+    "usage": "Party",
+    "features": [
+      "wrap style",
+      "tie waist",
+      "v-neck"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1033",
+    "name": "Women's Casual Shirt Dress",
+    "description": "Women's Casual Shirt Dress. Designed for casual wear. Made from cotton in olive. Suitable for summer use. Features include button front, waist belt, knee length.",
+    "category": "Dresses",
+    "sub_category": "Shirt Dress",
+    "color": "Olive",
+    "gender": "Women",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 1999,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "button front",
+      "waist belt",
+      "knee length"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1034",
+    "name": "Men's Classic Low-Top Sneakers",
+    "description": "Men's Classic Low-Top Sneakers. Designed for casual wear. Made from synthetic leather in white. Suitable for all season use. Features include lace-up, cushioned footbed, rubber outsole.",
+    "category": "Footwear",
+    "sub_category": "Sneakers",
+    "color": "White",
+    "gender": "Men",
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "price": 2499,
+    "currency": "INR",
+    "fabric": "Synthetic Leather",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "lace-up",
+      "cushioned footbed",
+      "rubber outsole"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1035",
+    "name": "Women's Everyday Canvas Sneakers",
+    "description": "Women's Everyday Canvas Sneakers. Designed for casual wear. Made from canvas in white. Suitable for all season use. Features include lace-up, textile lining, rubber sole.",
+    "category": "Footwear",
+    "sub_category": "Sneakers",
+    "color": "White",
+    "gender": "Women",
+    "sizes": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "price": 1799,
+    "currency": "INR",
+    "fabric": "Canvas",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "lace-up",
+      "textile lining",
+      "rubber sole"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1036",
+    "name": "Unisex Lightweight Running Shoes",
+    "description": "Unisex Lightweight Running Shoes. Designed for sportswear wear. Made from mesh in black. Suitable for summer use. Features include breathable mesh, foam cushioning, grip outsole.",
+    "category": "Footwear",
+    "sub_category": "Running Shoes",
+    "color": "Black",
+    "gender": "Unisex",
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "price": 2999,
+    "currency": "INR",
+    "fabric": "Mesh",
+    "season": "Summer",
+    "usage": "Sportswear",
+    "features": [
+      "breathable mesh",
+      "foam cushioning",
+      "grip outsole"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1037",
+    "name": "Men's Leather-Look Formal Belt",
+    "description": "Men's Leather-Look Formal Belt. Designed for formal wear. Made from synthetic leather in brown. Suitable for all season use. Features include adjustable strap, metal buckle, classic design.",
+    "category": "Accessories",
+    "sub_category": "Belt",
+    "color": "Brown",
+    "gender": "Men",
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "price": 699,
+    "currency": "INR",
+    "fabric": "Synthetic Leather",
+    "season": "All Season",
+    "usage": "Formal",
+    "features": [
+      "adjustable strap",
+      "metal buckle",
+      "classic design"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1038",
+    "name": "Women's Minimal Crossbody Bag",
+    "description": "Women's Minimal Crossbody Bag. Designed for casual wear. Made from pu leather in tan. Suitable for all season use. Features include adjustable strap, zip closure, inner pocket.",
+    "category": "Accessories",
+    "sub_category": "Bag",
+    "color": "Tan",
+    "gender": "Women",
+    "sizes": [
+      "One Size"
+    ],
+    "price": 1599,
+    "currency": "INR",
+    "fabric": "PU Leather",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "adjustable strap",
+      "zip closure",
+      "inner pocket"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1039",
+    "name": "Unisex Cotton Baseball Cap",
+    "description": "Unisex Cotton Baseball Cap. Designed for casual wear. Made from cotton in navy. Suitable for summer use. Features include adjustable back strap, curved brim, embroidered detail.",
+    "category": "Accessories",
+    "sub_category": "Cap",
+    "color": "Navy",
+    "gender": "Unisex",
+    "sizes": [
+      "One Size"
+    ],
+    "price": 499,
+    "currency": "INR",
+    "fabric": "Cotton",
+    "season": "Summer",
+    "usage": "Casual",
+    "features": [
+      "adjustable back strap",
+      "curved brim",
+      "embroidered detail"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  },
+  {
+    "product_id": "P1040",
+    "name": "Women's Lightweight Printed Scarf",
+    "description": "Women's Lightweight Printed Scarf. Designed for casual wear. Made from polyester in multicolor. Suitable for all season use. Features include soft feel, printed design, rectangular shape.",
+    "category": "Accessories",
+    "sub_category": "Scarf",
+    "color": "Multicolor",
+    "gender": "Women",
+    "sizes": [
+      "One Size"
+    ],
+    "price": 599,
+    "currency": "INR",
+    "fabric": "Polyester",
+    "season": "All Season",
+    "usage": "Casual",
+    "features": [
+      "soft feel",
+      "printed design",
+      "rectangular shape"
+    ],
+    "care_instructions": "Follow the care label. Wash similar colors together; avoid harsh bleach."
+  }
+]
