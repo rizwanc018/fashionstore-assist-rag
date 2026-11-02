@@ -9,8 +9,9 @@ def search_products(query: str, limit: int = 5):
 
         print("\nQuery: ", query)
         for obj in response.objects:
-            print("Product:", obj.properties["name"])
-            print("Distance:", obj.metadata.distance)
+            for key, value in obj.properties.items():
+                print(f"{key}: {value}")
+            print()
 
 
 if __name__ == "__main__":

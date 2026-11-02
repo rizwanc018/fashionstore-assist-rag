@@ -37,6 +37,8 @@ def ingest_products():
                     "season": product["season"],
                     "color": product["color"],
                     "price": product["price"],
+                    "fabric": product["fabric"],
+                    "sizes": product["sizes"],
                 }
 
                 batch.add_object(

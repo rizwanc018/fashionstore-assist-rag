@@ -4,6 +4,7 @@ def product_to_text(product):
         f"Description: {product['description']}. "
         f"Category: {product['category']}. "
         f"Gender: {product['gender']}. "
+        f"price: {product['price']}. "
         f"Available sizes: {', '.join(product['sizes'])}. "
         f"Usage: {product['usage']}. "
         f"Care instructions: {product['care_instructions']}."
