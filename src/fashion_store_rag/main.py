@@ -1,35 +1,20 @@
-from weaviate.classes.config import DataType, Property
-
-from fashion_store_rag.database.client import get_weaviate_client
+from fashion_store_rag.services.rag import answer_question
 
 
-def add_missing_properties():
-    with get_weaviate_client() as client:
-        products = client.collections.get("Products")
+def main():
+    questions = [
+        "Show me comfortable cotton clothes for summer.",
+        "Do you have black casual t-shirts for women?",
+        "Which products are available for winter?",
+    ]
 
-        properties = [
-            Property(
-                name="description", data_type=DataType.TEXT, skip_vectorization=True
-            ),
-            Property(
-                name="sizes", data_type=DataType.TEXT_ARRAY, skip_vectorization=True
-            ),
-            Property(name="currency", data_type=DataType.TEXT, skip_vectorization=True),
-            Property(name="fabric", data_type=DataType.TEXT, skip_vectorization=True),
-            Property(
-                name="features", data_type=DataType.TEXT_ARRAY, skip_vectorization=True
-            ),
-            Property(
-                name="care_instructions",
-                data_type=DataType.TEXT,
-                skip_vectorization=True,
-            ),
-        ]
+    for question in questions:
+        print(f"\nQuestion: {question}")
 
-        for prop in properties:
-            products.config.add_property(prop)
+        answer = answer_question(question)
 
-        print("Additional product properties added.")
+        print(f"Answer: {answer}")
 
 
-add_missing_properties()
+if __name__ == "__main__":
+    main()
