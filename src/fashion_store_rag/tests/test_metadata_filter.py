@@ -1,40 +1,41 @@
-from fashion_store_rag.query_understanding.metadata_extractor import extract_metadata
-from fashion_store_rag.retrieval.product_search import (
-    search_products,
-    search_products_with_filters,
-)
-
-query = "Show me black cotton T-shirts for men under 800"
-
-metadata = extract_metadata(query)
-
-print("Extracted metadata:")
-print(metadata.model_dump())
+from fashion_store_rag.database.client import get_weaviate_client
+from fashion_store_rag.query_understanding.metadata_extractor import ProductMetadata
+from fashion_store_rag.retrieval.metadata_filters import build_metadata_filters
 
 
-products = search_products(
-    query=query,
-    limit=5,
-)
-print("\nRetrieved products:")
-for product in products:
-    print(
-        product.properties["name"],
-        product.properties["color"],
-        product.properties["fabric"],
-        product.properties["price"],
+def test_metadata_filter():
+    metadata = ProductMetadata(
+        category="Topwear", sub_category="Shirt", gender="Men", fabric="Cotton"
     )
 
-metadata_products = search_products_with_filters(
-    query=query,
-    metadata=metadata,
-    limit=5,
-)
-print("\nRetrieved metadata_products:")
-for product in metadata_products:
-    print(
-        product.properties["name"],
-        product.properties["color"],
-        product.properties["fabric"],
-        product.properties["price"],
-    )
+    filters = build_metadata_filters(metadata)
+
+    with get_weaviate_client() as client:
+        collection = client.collections.get("Products")
+
+        response = collection.query.fetch_objects(
+            filters=filters,
+            limit=50,
+        )
+
+        for obj in response.objects:
+            print(
+                obj.properties["name"],
+                "| Subcategory:",
+                obj.properties["sub_category"],
+                "| Fabric:",
+                obj.properties["fabric"],
+            )
+
+
+test_metadata_filter()
+
+
+# result = retrieve_products("Show me blue jeans")
+
+# for item in result["products"]:
+#     print(
+#         item["product"].properties["name"],
+#         "| Score:",
+#         item["score"],
+#     )

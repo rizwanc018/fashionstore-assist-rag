@@ -14,8 +14,11 @@ def build_metadata_filters(metadata: ProductMetadata):
         if value is not None:
             filters.append(Filter.by_property(field).equal(value))
 
+    # if metadata.fabric is not None:
+    #     filters.append(Filter.by_property("fabric").like(f"*{metadata.fabric}*"))
+
     if metadata.fabric is not None:
-        filters.append(Filter.by_property("fabric").like(f"*{metadata.fabric}*"))
+        filters.append(Filter.by_property("fabric").equal(metadata.fabric))
 
     if metadata.sizes:
         filters.append(Filter.by_property("sizes").contains_any(metadata.sizes))
