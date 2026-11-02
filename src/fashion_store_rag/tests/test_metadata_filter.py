@@ -17,7 +17,7 @@ products = search_products(
     limit=5,
 )
 print("\nRetrieved products:")
-for product in products.objects:
+for product in products:
     print(
         product.properties["name"],
         product.properties["color"],
@@ -31,7 +31,7 @@ metadata_products = search_products_with_filters(
     limit=5,
 )
 print("\nRetrieved metadata_products:")
-for product in metadata_products.objects:
+for product in metadata_products:
     print(
         product.properties["name"],
         product.properties["color"],

@@ -13,7 +13,7 @@ def answer_question(query: str, limit: int = 5) -> str:
         return "I couldn't find any matching products."
 
     # 2. Format retrieved products
-    context = format_retrieved_products(products.objects)
+    context = format_retrieved_products(products)
 
     # 3. Build RAG prompt
     prompt = build_rag_prompt(
