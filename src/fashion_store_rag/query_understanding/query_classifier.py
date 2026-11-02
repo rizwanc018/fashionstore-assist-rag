@@ -53,19 +53,3 @@ def classify_query(query: str) -> QueryClassification:
     )
 
     return response.output_parsed
-
-
-if __name__ == "__main__":
-    queries = [
-        "Show me black T-shirts for men",
-        "What fabric is this shirt made of?",
-        "Compare these two T-shirts",
-        "What is your return policy?",
-        "Can you explain quantum physics?",
-    ]
-
-    for query in queries:
-        result = classify_query(query)
-
-        print(f"\nQuery: {query}")
-        print(f"Intent: {result.intent}")

@@ -1,5 +1,3 @@
-from urllib import response
-
 from pydantic import BaseModel, Field
 
 from fashion_store_rag.services.llm import client
@@ -34,19 +32,3 @@ def rewrite_query(query: str) -> QueryRewrite:
     )
 
     return response.output_parsed
-
-
-if __name__ == "__main__":
-    queries = [
-        "Something comfortable for hot weather",
-        "Black T-shirts for men",
-        "I need clothes for running",
-        "Show me affordable cotton shirts",
-        "Do you have blue jeans in size 32?",
-    ]
-
-    for query in queries:
-        result = rewrite_query(query)
-
-        print(f"\nOriginal:  {query}")
-        print(f"Rewritten: {result.rewritten_query}")
