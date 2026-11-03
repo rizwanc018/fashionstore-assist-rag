@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "bm25s>=0.3.16",
     "ipykernel>=7.4.0",
     "openai>=3.42.0",
     "pandas>=3.1.0",
