@@ -6,24 +6,26 @@ from fashion_store_rag.retrieval.reranker import rerank_products
 
 
 def retrieve_products(query: str, limit: int = 5, retrieval_limit: int = 5):
-    # Classify customer query
-    classification = classify_query(query)
-    intent = classification.intent
+    intent = None
 
-    # Handle non-product queries
-    if intent == "faq":
-        return {
-            "intent": intent,
-            "products": [],
-            "message": "This query should be handled by FAQ retrieval.",
-        }
+    # # Classify customer query
+    # classification = classify_query(query)
+    # intent = classification.intent
 
-    if intent == "out_of_scope":
-        return {
-            "intent": intent,
-            "products": [],
-            "message": "This query is outside the fashion store scope.",
-        }
+    # # Handle non-product queries
+    # if intent == "faq":
+    #     return {
+    #         "intent": intent,
+    #         "products": [],
+    #         "message": "This query should be handled by FAQ retrieval.",
+    #     }
+
+    # if intent == "out_of_scope":
+    #     return {
+    #         "intent": intent,
+    #         "products": [],
+    #         "message": "This query is outside the fashion store scope.",
+    #     }
 
     # Rewrite query for retrieval
     rewritten_query = rewrite_query(query).rewritten_query
@@ -47,7 +49,7 @@ def retrieve_products(query: str, limit: int = 5, retrieval_limit: int = 5):
     )
 
     return {
-        "intent": intent,
+        "intent": intent or "search_products",
         "rewritten_query": rewritten_query,
         "metadata": metadata.model_dump(exclude_none=True),
         "products": reranked_products,

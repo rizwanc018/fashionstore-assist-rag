@@ -29,13 +29,3 @@ def test_metadata_filter():
 
 
 test_metadata_filter()
-
-
-# result = retrieve_products("Show me blue jeans")
-
-# for item in result["products"]:
-#     print(
-#         item["product"].properties["name"],
-#         "| Score:",
-#         item["score"],
-#     )

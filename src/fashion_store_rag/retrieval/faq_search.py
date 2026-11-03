@@ -9,8 +9,6 @@ def search_faqs(query: str, limit: int = 3) -> list[dict]:
     query_tokens = bm25s.tokenize(query, stopwords="en")
 
     results, scores = retriever.retrieve(query_tokens, k=limit)
-    print(results)
-    print(scores)
 
     return [
         {

@@ -1,4 +1,3 @@
-# src/fashion_store_rag/ingestion/faq.py
 import json
 from pathlib import Path
 
