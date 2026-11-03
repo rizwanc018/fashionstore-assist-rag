@@ -9,15 +9,30 @@ with patch("fashion_store_rag.agent.orchestrator.evaluate_retrieval") as mock_ev
             relevant=False,
             score=1,
             reasoning="Insufficient results.",
-            decision="retry",
+            decision="unknown",
         ),
         RetrievalEvaluation(
             relevant=False,
             score=1,
             reasoning="Insufficient results.",
-            decision="retry",
+            decision="unknown",
         ),
     ]
+
+    # mock_evaluator.side_effect = [
+    #     RetrievalEvaluation(
+    #         relevant=False,
+    #         score=1,
+    #         reasoning="Insufficient results.",
+    #         decision="retry",
+    #     ),
+    #     RetrievalEvaluation(
+    #         relevant=False,
+    #         score=1,
+    #         reasoning="Insufficient results.",
+    #         decision="retry",
+    #     ),
+    # ]
 
     result = run_agent("Show me blue jeans")
 

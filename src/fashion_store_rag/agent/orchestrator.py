@@ -1,5 +1,8 @@
+from weaviate.exceptions import WeaviateBaseError
+
 from fashion_store_rag.agent.answer_generator import generate_agent_answer
 from fashion_store_rag.agent.evaluator import evaluate_retrieval
+from fashion_store_rag.agent.query_refiner import refine_query
 from fashion_store_rag.agent.router import route_query
 from fashion_store_rag.agent.tools import (
     compare_products_tool,
@@ -60,14 +63,19 @@ def run_agent(query: str, **kwargs):
     max_attempts = 2
     evaluation = None
     tool_result = []
+    search_query = query
 
     for attempt in range(max_attempts):
         retrieval_limit = 5 if attempt == 0 else 15
 
-        tool_result = search_products_tool(
-            query=query,
-            retrieval_limit=retrieval_limit,
-        )
+        try:
+            tool_result = search_products_tool(
+                query=search_query,
+                retrieval_limit=retrieval_limit,
+            )
+        except WeaviateBaseError as error:
+            print(f"Retrieval failed: {error}")
+            tool_result = []
 
         evaluation = evaluate_retrieval(
             query=query,
@@ -79,6 +87,18 @@ def run_agent(query: str, **kwargs):
 
         if evaluation.decision == "accept":
             break
+
+        if attempt < max_attempts - 1:
+            refinement = refine_query(
+                query=query,
+                evaluation=evaluation,
+            )
+            refined_query = refinement.refined_query.strip()
+
+            if refined_query:
+                search_query = refined_query
+            else:
+                search_query = query
 
     if evaluation.decision == "accept":
         answer = generate_agent_answer(
