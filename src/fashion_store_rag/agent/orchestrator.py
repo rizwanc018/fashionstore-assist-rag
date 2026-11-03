@@ -1,4 +1,5 @@
 from fashion_store_rag.agent.answer_generator import generate_agent_answer
+from fashion_store_rag.agent.evaluator import evaluate_retrieval
 from fashion_store_rag.agent.router import route_query
 from fashion_store_rag.agent.tools import (
     compare_products_tool,
@@ -40,12 +41,61 @@ def execute_tool(route: str, query: str, **kwargs):
 def run_agent(query: str, **kwargs):
     route = route_query(query)
 
-    tool_result = execute_tool(
-        route=route,
-        query=query,
-        **kwargs,
-    )
+    if route != "search_products":
+        tool_result = execute_tool(route=route, query=query, **kwargs)
 
-    answer = generate_agent_answer(query=query, context=tool_result)
+        answer = generate_agent_answer(
+            query=query,
+            context=tool_result,
+        )
 
-    return {"route": route, "tool_result": tool_result, "answer": answer}
+        return {
+            "route": route,
+            "tool_result": tool_result,
+            "evaluation": None,
+            "attempts": 1,
+            "answer": answer,
+        }
+
+    max_attempts = 2
+    evaluation = None
+    tool_result = []
+
+    for attempt in range(max_attempts):
+        retrieval_limit = 5 if attempt == 0 else 15
+
+        tool_result = search_products_tool(
+            query=query,
+            retrieval_limit=retrieval_limit,
+        )
+
+        evaluation = evaluate_retrieval(
+            query=query,
+            products=tool_result,
+        )
+
+        if evaluation is None:
+            raise RuntimeError("Retrieval evaluation was not performed.")
+
+        if evaluation.decision == "accept":
+            break
+
+    if evaluation.decision == "accept":
+        answer = generate_agent_answer(
+            query=query,
+            context=tool_result,
+        )
+    else:
+        answer = (
+            "I couldn't find sufficiently relevant products "
+            "for your request. Could you try different search "
+            "criteria?"
+        )
+
+    return {
+        "route": route,
+        "tool_result": tool_result,
+        "evaluation": evaluation.model_dump(),
+        "attempts": attempt + 1,
+        "answer": answer,
+    }

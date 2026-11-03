@@ -1,5 +1,4 @@
 from fashion_store_rag.query_understanding.metadata_extractor import extract_metadata
-from fashion_store_rag.query_understanding.query_classifier import classify_query
 from fashion_store_rag.query_understanding.query_rewriter import rewrite_query
 from fashion_store_rag.retrieval.product_search import search_products_hybrid
 from fashion_store_rag.retrieval.reranker import rerank_products

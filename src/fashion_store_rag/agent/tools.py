@@ -18,10 +18,15 @@ def search_faqs_tool(query: str, limit: int = 3) -> list[dict]:
     ]
 
 
-def search_products_tool(query: str, limit: int = 5) -> list[dict]:
+def search_products_tool(
+    query: str,
+    limit: int = 5,
+    retrieval_limit: int = 5,
+) -> list[dict]:
     result = retrieve_products(
         query=query,
         limit=limit,
+        retrieval_limit=retrieval_limit,
     )
 
     return [
