@@ -1,3 +1,5 @@
+from concurrent.futures import ThreadPoolExecutor
+
 from fashion_store_rag.database.client import get_weaviate_client
 from fashion_store_rag.query_understanding.metadata_extractor import ProductMetadata
 from fashion_store_rag.retrieval.fusion import reciprocal_rank_fusion
@@ -45,25 +47,32 @@ def search_products_hybrid(
     retrieval_limit: int = 10,
     metadata: ProductMetadata | None = None,
 ):
-    dense_results = search_products(
-        query=query,
-        limit=retrieval_limit,
-        metadata=metadata,
-    )
 
-    bm25_results = search_products_bm25(
-        query=query,
-        limit=retrieval_limit,
-        metadata=metadata,
-    )
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        dense_future = executor.submit(
+            search_products,
+            query=query,
+            limit=retrieval_limit,
+            metadata=metadata,
+        )
 
-    fused_results = reciprocal_rank_fusion(
-        result_lists=[
-            dense_results,
-            bm25_results,
-        ],
-        k=60,
-        limit=limit,
-    )
+        bm25_future = executor.submit(
+            search_products_bm25,
+            query=query,
+            limit=retrieval_limit,
+            metadata=metadata,
+        )
 
-    return fused_results
+        dense_results = dense_future.result()
+        bm25_results = bm25_future.result()
+
+        fused_results = reciprocal_rank_fusion(
+            result_lists=[
+                dense_results,
+                bm25_results,
+            ],
+            k=60,
+            limit=limit,
+        )
+
+        return fused_results
