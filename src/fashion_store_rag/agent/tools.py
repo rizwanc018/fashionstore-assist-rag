@@ -22,11 +22,10 @@ def search_products_tool(
     query: str,
     limit: int = 5,
     retrieval_limit: int = 5,
+    timings: dict | None = None,
 ) -> list[dict]:
     result = retrieve_products(
-        query=query,
-        limit=limit,
-        retrieval_limit=retrieval_limit,
+        query=query, limit=limit, retrieval_limit=retrieval_limit, timings=timings
     )
 
     return [

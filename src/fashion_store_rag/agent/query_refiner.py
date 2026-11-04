@@ -1,3 +1,5 @@
+import time
+
 from pydantic import BaseModel, Field
 
 from fashion_store_rag.agent.evaluator import RetrievalEvaluation
@@ -13,10 +15,10 @@ class QueryRefinement(BaseModel):
 
 
 def refine_query(
-    query: str,
-    evaluation: RetrievalEvaluation,
+    query: str, evaluation: RetrievalEvaluation, timings: dict | None = None
 ) -> QueryRefinement:
-
+    start = time.perf_counter()
+    print("Refining query")
     response = client.responses.parse(
         model="gpt-5-mini",
         instructions="""
@@ -45,5 +47,10 @@ def refine_query(
         """,
         text_format=QueryRefinement,
     )
+
+    elapsed_ms = (time.perf_counter() - start) * 1000
+
+    if timings is not None:
+        timings["refine_query_ms"] = round(elapsed_ms, 2)
 
     return response.output_parsed

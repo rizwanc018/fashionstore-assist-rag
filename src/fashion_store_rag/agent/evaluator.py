@@ -1,3 +1,4 @@
+import time
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -18,7 +19,9 @@ class RetrievalEvaluation(BaseModel):
     )
 
 
-def evaluate_retrieval(query: str, products: list[dict]) -> RetrievalEvaluation:
+def evaluate_retrieval(
+    query: str, products: list[dict], timings: dict | None = None
+) -> RetrievalEvaluation:
     if not products:
         return RetrievalEvaluation(
             relevant=False,
@@ -26,6 +29,8 @@ def evaluate_retrieval(query: str, products: list[dict]) -> RetrievalEvaluation:
             reasoning="No products were retrieved.",
             decision="retry",
         )
+
+    start = time.perf_counter()
 
     response = client.responses.parse(
         model="gpt-5-mini",
@@ -67,4 +72,10 @@ def evaluate_retrieval(query: str, products: list[dict]) -> RetrievalEvaluation:
         """,
         text_format=RetrievalEvaluation,
     )
+
+    elapsed_ms = (time.perf_counter() - start) * 1000
+
+    if timings is not None:
+        timings["evaluation_ms"] = round(elapsed_ms, 2)
+
     return response.output_parsed

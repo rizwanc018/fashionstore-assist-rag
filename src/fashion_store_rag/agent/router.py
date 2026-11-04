@@ -19,6 +19,6 @@ ROUTE_MAPPING: dict[str, Route] = {
 }
 
 
-def route_query(query: str) -> Route:
-    classification = classify_query(query)
+def route_query(query: str, timings: dict | None = None) -> Route:
+    classification = classify_query(query, timings=timings)
     return ROUTE_MAPPING[classification.intent]

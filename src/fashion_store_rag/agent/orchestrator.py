@@ -41,15 +41,15 @@ def execute_tool(route: str, query: str, **kwargs):
     raise ValueError(f"Unknown route: {route}")
 
 
-def run_agent(query: str, **kwargs):
-    route = route_query(query)
+def run_agent(query: str, timings: dict | None = None, **kwargs):
+
+    route = route_query(query, timings=timings)
 
     if route != "search_products":
         tool_result = execute_tool(route=route, query=query, **kwargs)
 
         answer = generate_agent_answer(
-            query=query,
-            context=tool_result,
+            query=query, context=tool_result, timings=timings
         )
 
         return {
@@ -70,16 +70,14 @@ def run_agent(query: str, **kwargs):
 
         try:
             tool_result = search_products_tool(
-                query=search_query,
-                retrieval_limit=retrieval_limit,
+                query=search_query, retrieval_limit=retrieval_limit, timings=timings
             )
         except WeaviateBaseError as error:
             print(f"Retrieval failed: {error}")
             tool_result = []
 
         evaluation = evaluate_retrieval(
-            query=query,
-            products=tool_result,
+            query=query, products=tool_result, timings=timings
         )
 
         if evaluation is None:
@@ -90,8 +88,7 @@ def run_agent(query: str, **kwargs):
 
         if attempt < max_attempts - 1:
             refinement = refine_query(
-                query=query,
-                evaluation=evaluation,
+                query=query, evaluation=evaluation, timings=timings
             )
             refined_query = refinement.refined_query.strip()
 
@@ -102,8 +99,7 @@ def run_agent(query: str, **kwargs):
 
     if evaluation.decision == "accept":
         answer = generate_agent_answer(
-            query=query,
-            context=tool_result,
+            query=query, context=tool_result, timings=timings
         )
     else:
         answer = (

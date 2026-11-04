@@ -1,7 +1,11 @@
+import time
+
 from fashion_store_rag.services.llm import client
 
 
-def generate_agent_answer(query: str, context) -> str:
+def generate_agent_answer(query: str, context, timings: dict | None = None) -> str:
+    start = time.perf_counter()
+
     response = client.responses.create(
         model="gpt-5-mini",
         instructions="""
@@ -36,4 +40,10 @@ def generate_agent_answer(query: str, context) -> str:
         {context}
         """,
     )
+
+    elapsed_ms = (time.perf_counter() - start) * 1000
+
+    if timings is not None:
+        timings["llm_generation_ms"] = round(elapsed_ms, 2)
+
     return response.output_text

@@ -1,24 +1,32 @@
-from fashion_store_rag.evaluation.benchmark import run_benchmark
+import time
 
-results = run_benchmark(k=5, candidate_limit=15)
+from fashion_store_rag.agent.orchestrator import run_agent
 
-print("\n=== SUMMARY ===")
 
-for strategy, metrics in results["summary"].items():
-    print(f"\n{strategy}")
+def main():
 
-    for metric, score in metrics.items():
-        print(f"{metric}: {score:.4f}")
+    questions = [
+        "Show me comfortable cotton clothes for summer.",
+        "Do you have black casual t-shirts for women?",
+        # "Which products are available for winter?",
+        # "What is your return policy?"
+    ]
 
-print("\n=== PER QUERY RESULTS ===")
+    for question in questions:
+        start = time.perf_counter()
+        print(f"\nQuestion: {question}")
+        timings = {}
+        answer = run_agent(question, timings=timings)
 
-for item in results["per_query"]:
-    print(f"\nQuery: {item['query']}")
-    print(f"Relevant IDs: {item['relevant_product_ids']}")
+        print(f"Answer: {answer}")
+        print("\n--- Performance Metrics ---")
 
-    for strategy, metrics in item["strategies"].items():
-        print(f"\n  {strategy}")
-        print(f"    Retrieved: {metrics['retrieved_product_ids']}")
-        print(f"    Precision@5: {metrics['Precision@5']:.4f}")
-        print(f"    Recall@5: {metrics['Recall@5']:.4f}")
-        print(f"    RR: {metrics['RR']:.4f}")
+        for stage, duration in timings.items():
+            print(f"{stage}: {duration:.2f} ms")
+
+        total_ms = (time.perf_counter() - start) * 1000
+        print(f"Total pipeline: {total_ms:.2f} ms")
+
+
+if __name__ == "__main__":
+    main()

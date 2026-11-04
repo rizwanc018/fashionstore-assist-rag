@@ -1,3 +1,4 @@
+import time
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -24,7 +25,9 @@ class QueryClassification(BaseModel):
     ] = Field(description="The intent of the customer's query")
 
 
-def classify_query(query: str) -> QueryClassification:
+def classify_query(query: str, timings: dict | None = None) -> QueryClassification:
+    classification_start = time.perf_counter()
+
     response = client.responses.parse(
         model="gpt-5-mini",
         input=[
@@ -51,5 +54,8 @@ def classify_query(query: str) -> QueryClassification:
         ],
         text_format=QueryClassification,
     )
+    classification_ms = (time.perf_counter() - classification_start) * 1000
+    if timings is not None:
+        timings["classification_ms"] = round(classification_ms, 2)
 
     return response.output_parsed
