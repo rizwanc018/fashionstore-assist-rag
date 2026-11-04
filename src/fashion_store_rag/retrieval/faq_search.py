@@ -6,9 +6,9 @@ from fashion_store_rag.ingestion.faq import load_faq_index
 def search_faqs(query: str, limit: int = 3) -> list[dict]:
     retriever, faqs = load_faq_index()
 
-    query_tokens = bm25s.tokenize(query, stopwords="en")
+    query_tokens = bm25s.tokenize(query, stopwords="en", show_progress=False)
 
-    results, scores = retriever.retrieve(query_tokens, k=limit)
+    results, scores = retriever.retrieve(query_tokens, k=limit, show_progress=False)
 
     return [
         {
