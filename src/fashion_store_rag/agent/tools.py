@@ -38,6 +38,9 @@ def search_products_tool(
             "color": item["product"].properties["color"],
             "fabric": item["product"].properties["fabric"],
             "price": item["product"].properties["price"],
+            "usage": item["product"].properties["usage"],
+            "gender": item["product"].properties["gender"],
+            "season": item["product"].properties["season"],
             "sizes": item["product"].properties["sizes"],
             "score": item["score"],
         }
