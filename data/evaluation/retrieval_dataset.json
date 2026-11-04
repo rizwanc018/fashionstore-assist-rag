@@ -1,0 +1,159 @@
+[
+    {
+        "query": "Find men's cotton crew-neck t-shirts",
+        "relevant_product_ids": [
+            "P1001",
+            "P1002"
+        ]
+    },
+    {
+        "query": "Find women's cotton t-shirts",
+        "relevant_product_ids": [
+            "P1005",
+            "P1006",
+            "P1007"
+        ]
+    },
+    {
+        "query": "Show me products in blue",
+        "relevant_product_ids": [
+            "P1003",
+            "P1008",
+            "P1014",
+            "P1018",
+            "P1023"
+        ]
+    },
+    {
+        "query": "Show me black products",
+        "relevant_product_ids": [
+            "P1001",
+            "P1006",
+            "P1016",
+            "P1019",
+            "P1024",
+            "P1025",
+            "P1036"
+        ]
+    },
+    {
+        "query": "Find denim cotton products",
+        "relevant_product_ids": [
+            "P1018",
+            "P1023"
+        ]
+    },
+    {
+        "query": "Show me women's dresses",
+        "relevant_product_ids": [
+            "P1005",
+            "P1006",
+            "P1007",
+            "P1012",
+            "P1013",
+            "P1014",
+            "P1018",
+            "P1019",
+            "P1020",
+            "P1022",
+            "P1024",
+            "P1026",
+            "P1028",
+            "P1029",
+            "P1031",
+            "P1032",
+            "P1033",
+            "P1035",
+            "P1038",
+            "P1040"
+        ]
+    },
+    {
+        "query": "Find men's casual shirts",
+        "relevant_product_ids": [
+            "P1001",
+            "P1002",
+            "P1004",
+            "P1008",
+            "P1010",
+            "P1011",
+            "P1015",
+            "P1021",
+            "P1023",
+            "P1034"
+        ]
+    },
+    {
+        "query": "Show me white sneakers",
+        "relevant_product_ids": [
+            "P1034",
+            "P1035"
+        ]
+    },
+    {
+        "query": "Find men's bottomwear",
+        "relevant_product_ids": [
+            "P1015",
+            "P1016",
+            "P1017",
+            "P1025"
+        ]
+    },
+    {
+        "query": "Find women's bottomwear",
+        "relevant_product_ids": [
+            "P1018",
+            "P1019",
+            "P1020",
+            "P1026"
+        ]
+    },
+    {
+        "query": "Find cotton accessories",
+        "relevant_product_ids": [
+            "P1039"
+        ]
+    },
+    {
+        "query": "Show me products priced at 800 or less",
+        "relevant_product_ids": [
+            "P1001",
+            "P1002",
+            "P1003",
+            "P1005",
+            "P1006",
+            "P1007",
+            "P1025",
+            "P1037",
+            "P1039",
+            "P1040"
+        ]
+    },
+    {
+        "query": "Find women's cotton products",
+        "relevant_product_ids": [
+            "P1005",
+            "P1006",
+            "P1007",
+            "P1014",
+            "P1020",
+            "P1028",
+            "P1033"
+        ]
+    },
+    {
+        "query": "Find blue products for men",
+        "relevant_product_ids": [
+            "P1003",
+            "P1008",
+            "P1023"
+        ]
+    },
+    {
+        "query": "Find pink products for women",
+        "relevant_product_ids": [
+            "P1005",
+            "P1029"
+        ]
+    }
+]
