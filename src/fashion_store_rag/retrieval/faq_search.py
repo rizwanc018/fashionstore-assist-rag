@@ -1,10 +1,10 @@
 import bm25s
 
-from fashion_store_rag.ingestion.faq import build_faq_index
+from fashion_store_rag.ingestion.faq import load_faq_index
 
 
 def search_faqs(query: str, limit: int = 3) -> list[dict]:
-    retriever, faqs = build_faq_index()
+    retriever, faqs = load_faq_index()
 
     query_tokens = bm25s.tokenize(query, stopwords="en")
 

@@ -11,4 +11,4 @@ wheels/
 .env
 
 Note.md
-data/processed
+data/indexes
