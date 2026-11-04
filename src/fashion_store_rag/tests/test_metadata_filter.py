@@ -5,7 +5,7 @@ from fashion_store_rag.retrieval.product_search import (
     search_products_hybrid,
 )
 
-query = "Show me blue jeans"
+query = "Which products are available for winter?"
 
 metadata = extract_metadata(query)
 metadata_filter = build_metadata_filters(metadata)

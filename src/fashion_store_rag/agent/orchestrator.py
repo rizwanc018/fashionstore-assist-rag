@@ -13,8 +13,8 @@ from fashion_store_rag.agent.tools import (
 
 
 def execute_tool(route: str, query: str, **kwargs):
-    if route == "search_products":
-        return search_products_tool(query)
+    # if route == "search_products":
+    #     return search_products_tool(query)
 
     if route == "search_faqs":
         return search_faqs_tool(query)
