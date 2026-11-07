@@ -56,17 +56,30 @@ def execute_tool(route: str, query: str, **kwargs):
     raise ValueError(f"Unknown route: {route}")
 
 
-def run_agent(query: str, timings: dict | None = None, **kwargs):
+def run_agent(query: str, timings: dict | None = None, on_status=None, **kwargs):
+
+    def report(message: str) -> None:
+        if on_status is not None:
+            on_status(message)
 
     logger.info("Running agent for query: %r", query)
 
+    report("Routing your query")
     route = route_query(query, timings=timings)
     logger.info("Query routed to: %s", route)
 
     if route != "search_products":
+        _route_labels = {
+            "search_faqs": "Retrieving relevant FAQs",
+            "get_product_details": "Fetching product from the catalog",
+            "compare_products": "Gathering products to compare",
+            "out_of_scope": "Checking query scope",
+        }
+        report(_route_labels.get(route, "Retrieving context"))
         tool_result = execute_tool(route=route, query=query, **kwargs)
         logger.info("Executed tool for route %s; generating answer", route)
 
+        report("Generating answer from retrieved context")
         answer = generate_agent_answer(
             query=query, context=tool_result, timings=timings
         )
@@ -94,6 +107,11 @@ def run_agent(query: str, timings: dict | None = None, **kwargs):
             search_query,
         )
 
+        if attempt == 0:
+            report("Retrieving products")
+        else:
+            report(f"Re-retrieving with a refined query (attempt {attempt + 1})")
+
         try:
             tool_result = search_products_tool(
                 query=search_query, retrieval_limit=retrieval_limit, timings=timings
@@ -104,6 +122,7 @@ def run_agent(query: str, timings: dict | None = None, **kwargs):
 
         logger.info("Retrieved %d product(s)", len(tool_result))
 
+        report("Evaluating retrieved products")
         evaluation = evaluate_retrieval(
             query=query, products=tool_result, timings=timings
         )
@@ -117,6 +136,7 @@ def run_agent(query: str, timings: dict | None = None, **kwargs):
             break
 
         if attempt < max_attempts - 1:
+            report("Refining the query for better retrieval")
             refinement = refine_query(
                 query=query, evaluation=evaluation, timings=timings
             )
@@ -131,6 +151,7 @@ def run_agent(query: str, timings: dict | None = None, **kwargs):
 
     if evaluation.decision == "accept":
         logger.info("Generating answer from %d accepted product(s)", len(tool_result))
+        report("Generating answer from retrieved products")
         answer = generate_agent_answer(
             query=query, context=tool_result, timings=timings
         )

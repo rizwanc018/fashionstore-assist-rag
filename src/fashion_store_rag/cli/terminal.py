@@ -28,7 +28,6 @@ def display_welcome():
     welcome = Text()
     welcome.append("FASHION STORE AI\n", style="bold cyan")
     welcome.append("Your personal shopping assistant - ", style="white")
-    welcome.append("Find products • Compare items • Ask questions\n", style="dim")
     welcome.append("Type /help for commands or /exit to quit", style="dim italic")
 
     console.print(
@@ -89,12 +88,17 @@ def main():
                 display_welcome()
                 continue
 
-            # Run the existing agent.
+            # Run the existing agent, surfacing its current stage live.
             with console.status(
                 "[bold yellow]Thinking...[/bold yellow]",
                 spinner="dots",
-            ):
-                result = run_agent(query)
+            ) as status:
+                result = run_agent(
+                    query,
+                    on_status=lambda message: status.update(
+                        f"[bold yellow]{message}...[/bold yellow]"
+                    ),
+                )
 
             answer = result.get("answer")
 
