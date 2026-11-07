@@ -1,6 +1,10 @@
+import logging
+
 from fashion_store_rag.ingestion.products import load_products
 from fashion_store_rag.retrieval.faq_search import search_faqs
 from fashion_store_rag.retrieval.retrieval_pipeline import retrieve_products
+
+logger = logging.getLogger(__name__)
 
 
 def search_faqs_tool(query: str, limit: int = 3) -> list[dict]:
@@ -24,11 +28,18 @@ def search_products_tool(
     retrieval_limit: int = 5,
     timings: dict | None = None,
 ) -> list[dict]:
+    logger.info(
+        "Searching products for query=%r (limit=%d, retrieval_limit=%d)",
+        query,
+        limit,
+        retrieval_limit,
+    )
+
     result = retrieve_products(
         query=query, limit=limit, retrieval_limit=retrieval_limit, timings=timings
     )
 
-    return [
+    products = [
         {
             "product_id": item["product"].properties["product_id"],
             "name": item["product"].properties["name"],
@@ -45,6 +56,10 @@ def search_products_tool(
         }
         for item in result["products"]
     ]
+
+    logger.info("Product search returned %d result(s)", len(products))
+
+    return products
 
 
 def get_product_details_tool(product_id: str):

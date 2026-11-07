@@ -1,3 +1,6 @@
+import logging
+import os
+
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
@@ -6,6 +9,19 @@ from rich.text import Text
 from fashion_store_rag.agent.orchestrator import run_agent
 
 console = Console()
+
+
+def configure_logging() -> None:
+    """Enable logging when LOG_LEVEL is set (e.g. LOG_LEVEL=INFO); off by default."""
+    level = os.getenv("LOG_LEVEL")
+
+    if not level:
+        return
+
+    logging.basicConfig(
+        level=level.upper(),
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
 
 
 def display_welcome():
@@ -48,6 +64,7 @@ def display_response(answer: str):
 
 
 def main():
+    configure_logging()
     display_welcome()
 
     while True:
