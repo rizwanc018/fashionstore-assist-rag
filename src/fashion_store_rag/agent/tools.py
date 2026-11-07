@@ -1,6 +1,5 @@
 import logging
 
-from fashion_store_rag.ingestion.products import load_products
 from fashion_store_rag.retrieval.faq_search import search_faqs
 from fashion_store_rag.retrieval.retrieval_pipeline import retrieve_products
 
@@ -58,27 +57,5 @@ def search_products_tool(
     ]
 
     logger.info("Product search returned %d result(s)", len(products))
-
-    return products
-
-
-def get_product_details_tool(product_id: str):
-    products = load_products()
-
-    for product in products:
-        if product["product_id"] == product_id:
-            return product
-
-    return None
-
-
-def compare_products_tool(product_ids: list[str]) -> list[dict]:
-    products = []
-
-    for product_id in product_ids:
-        product = get_product_details_tool(product_id)
-
-        if product is not None:
-            products.append(product)
 
     return products

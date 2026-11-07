@@ -8,8 +8,6 @@ from fashion_store_rag.services.llm import client
 # query_classification_description = """
 #             Classify the customer's query into exactly one intent:
 #             'product_search' when the customer wants to find products matching specific requirements or preferences;
-#             'product_question' when the customer asks about a specific product's attributes, such as color, size, fabric, price, or availability; "
-#             'product_comparison' when the customer wants to compare two or more products based on their features, prices, or other attributes; "
 #             'faq' when the customer asks about store policies or general store information, such as returns, shipping, payments, or refunds; "
 #             'out_of_scope' when the query is unrelated to the fashion store or its products.
 #             """
@@ -18,8 +16,6 @@ from fashion_store_rag.services.llm import client
 class QueryClassification(BaseModel):
     intent: Literal[
         "product_search",
-        "product_question",
-        "product_comparison",
         "faq",
         "out_of_scope",
     ] = Field(description="The intent of the customer's query")
@@ -39,8 +35,6 @@ def classify_query(query: str, timings: dict | None = None) -> QueryClassificati
                 Classify the customer's query into exactly one category:
 
                 - product_search: Finding products.
-                - product_question: Asking about product attributes.
-                - product_comparison: Comparing products or alternatives.
                 - faq: Asking about store policies, shipping, returns, or payments.
                 - out_of_scope: Unrelated to the fashion store.
 
