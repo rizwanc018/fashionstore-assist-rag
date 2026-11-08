@@ -1,3 +1,4 @@
+[fashion_store.webm](https://github.com/user-attachments/assets/5c7b04fd-e071-4537-9f10-2c9a613412f3)
 # Fashion Store RAG
 
 An agentic RAG assistant for a fashion e‑commerce store. It answers customer
